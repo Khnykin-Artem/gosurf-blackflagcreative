@@ -1,2 +1,74 @@
 @import "normalize";
-@import "header";
+@import "settings";
+
+.header {
+  position: relative;
+  height: 100vh;
+
+  .header-slider {
+    &-item {
+      position: relative;
+      height: 100vh;
+      background-image: url("@images/header-bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .slider-item-info {
+        position: absolute;
+        right: 80px;
+        bottom: 116px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #fff;
+
+        .slider-item-info-title {
+          margin-bottom: 48px;
+          font-weight: 800;
+          font-size: 80px;
+          line-height: 86px;
+        }
+
+        .slider-item-info-suptitle {
+          margin-bottom: 5px;
+        }
+
+        .slider-item-info-suptext {
+          margin-bottom: 8px;
+        }
+
+        .slider-item-info-text {
+          margin-bottom: 20px;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 46px;
+        }
+      }
+    }
+
+    .slider-arrows {
+      position: absolute;
+      right: 80px;
+      top: 40px;
+      z-index: 4;
+      cursor: pointer;
+    }
+
+    .slider-arrows-left {
+      right: 125px;
+    }
+  }
+
+  .slider-dots {
+    position: absolute;
+    right: 80px;
+    bottom: 41px;
+    width: 100%;
+    max-width: 920px;
+    color: #fff;
+
+    .slider-dots-item {
+      .dots-box {}
+    }
+  }
+}
