@@ -120,6 +120,28 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 4;
+    z-index: 5;
+    border-right: 1px solid rgba(#fff, 0.25);
+    height: 100vh;
+
+    .menu {
+      &-list {
+        text-align: center;
+
+        a {
+          color: #fff;
+
+          span {
+            display: block;
+            margin-bottom: 37px;
+            padding-top: 6px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
   }
 }
