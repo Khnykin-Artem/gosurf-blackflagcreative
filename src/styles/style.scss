@@ -123,11 +123,11 @@
     z-index: 5;
     border-right: 1px solid rgba(#fff, 0.25);
     height: 100vh;
+    text-align: center;
+    color: #fff;
 
     .menu {
       &-list {
-        text-align: center;
-
         a {
           color: #fff;
 
@@ -141,6 +141,21 @@
             letter-spacing: 3px;
           }
         }
+      }
+    }
+
+    .header-date {
+      font-weight: 800;
+      font-size: 72px;
+      line-height: 64px;
+
+      span {
+        display: block;
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1.4px;
       }
     }
   }
