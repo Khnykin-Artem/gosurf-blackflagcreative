@@ -187,4 +187,18 @@
       padding-bottom: 35px;
     }
   }
+
+  .header-map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  .header-arrows {
+    position: absolute;
+    left: 209px;
+    bottom: 41px;
+    z-index: 3;
+  }
 }
