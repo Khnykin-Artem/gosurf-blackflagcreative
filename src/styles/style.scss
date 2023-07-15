@@ -193,6 +193,12 @@
     right: 0;
     top: 0;
     z-index: 3;
+
+    .line-animation {
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: animdash 5s infinite 6s;
+    }
   }
 
   .header-arrows {
@@ -200,5 +206,11 @@
     left: 209px;
     bottom: 30px;
     z-index: 3;
+  }
+}
+
+@keyframes animdash {
+  100% {
+    stroke-dashoffset: 0;
   }
 }
