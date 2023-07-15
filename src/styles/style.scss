@@ -1,5 +1,5 @@
 @import "normalize";
-@import "settings";
+@import "global";
 @import "vars";
 
 .header {
@@ -87,6 +87,7 @@
         &-name {
           font-weight: 300;
           line-height: 19px;
+          text-transform: capitalize;
         }
       }
     }
@@ -141,6 +142,7 @@
             font-size: 12px;
             line-height: 14px;
             letter-spacing: 3px;
+            text-transform: capitalize;
           }
         }
       }
@@ -170,6 +172,7 @@
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 1.05px;
+      text-transform: capitalize;
 
       &::before {
         content: "";
@@ -214,3 +217,4 @@
     stroke-dashoffset: 0;
   }
 }
+
