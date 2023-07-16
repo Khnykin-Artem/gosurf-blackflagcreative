@@ -1,6 +1,16 @@
 @import "fonts";
 @import "vars";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
@@ -8,6 +18,11 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: #171919;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 a {
@@ -23,7 +38,7 @@ li {
   padding: 0;
 }
 
-.suptitle-left {
+.headline-left {
   position: relative;
   display: inline-block;
   padding-left: 103px;
@@ -48,9 +63,11 @@ li {
 .title {
   span {
     position: relative;
+    display: inline-block;
     font-weight: 800;
     font-size: 200px;
     color: rgba(#fff, 0.02);
+    transform: translateX(-50px);
   }
 
   h3 {
@@ -69,6 +86,20 @@ li {
       width: 80px;
       height: 1px;
       background-color: $green;
+    }
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+
+  &-head {
+    font-weight: 800;
+    font-size: 40px;
+
+    span {
+      font-weight: 100;
     }
   }
 }

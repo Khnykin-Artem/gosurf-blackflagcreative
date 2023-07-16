@@ -218,3 +218,18 @@
   }
 }
 
+.main {
+  .surf {
+    padding: 160px 0 210px;
+    background-image: url("@images/surf-bg.png");
+    background-position: right 200px;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    .surf-subtitle {
+      margin-top: -86px;
+      padding-right: 80px;
+      text-align: right;
+    }
+  }
+}
