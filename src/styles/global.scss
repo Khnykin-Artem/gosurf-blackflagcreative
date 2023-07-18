@@ -103,3 +103,15 @@ li {
     }
   }
 }
+
+.slider-arrows {
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.slider-arrows-left {
+  right: 125px;
+}
