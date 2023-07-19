@@ -200,6 +200,18 @@
   }
 }
 
+.slider-arrows {
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.slider-arrows-left {
+  right: 125px;
+}
+
 @keyframes animdash {
   100% {
     stroke-dashoffset: 0;
@@ -208,7 +220,7 @@
 
 .main {
   .surf {
-    padding: 160px 0 210px;
+    padding: 160px 0 120px;
     background-image: url("@images/surf-bg.png");
     background-position: right 200px;
     background-size: auto;
@@ -223,6 +235,24 @@
     .surf-slider {
       padding-top: 110px;
 
+      .slick-slide:nth-child(4n + 1) {
+        margin-top: 32px;
+      }
+
+      .slick-slide:nth-child(4n + 3) {
+        margin-top: 89px;
+      }
+
+      .slick-current {
+        .surf-box-inner-btn {
+          display: block;
+        }
+
+        .surf-box-inner {
+          background: rgba(#1c2121, 0.3);
+        }
+      }
+
       .surf-box {
         background-position: center;
         background-size: cover;
@@ -232,6 +262,7 @@
           position: relative;
           min-height: 750px;
           background: rgba(#1c2121, 0.85);
+          transition: all 0.5s;
 
           &-title {
             padding: 72px 0 0 40px;
@@ -242,9 +273,15 @@
           }
 
           &-location {
+            position: absolute;
+            left: 40px;
+            bottom: 80px;
+            width: 0;
+            height: 0;
             font-size: 18px;
             line-height: 22px; /* 122.222% */
             letter-spacing: 8px;
+            white-space: nowrap;
             transform: rotate(-90deg);
 
             span {
@@ -253,7 +290,20 @@
           }
 
           &-btn {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            text-align: center;
+          }
 
+          &:hover {
+            background: rgba(#1c2121, 0.3);
+
+            .surf-box-inner-btn {
+              display: block;
+            }
           }
         }
       }
@@ -262,6 +312,41 @@
         top: 50px;
         opacity: 0.25;
       }
+    }
+  }
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px; /* 90% */
+
+  span {
+    position: relative;
+    display: inline-block;
+    margin-left: 19px;
+    padding: 17px 57px 15px 17px;
+    background-color: $green;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 17px;
+      top: 50%;
+      width: 25px;
+      height: 21px;
+      background-image: url("@images/arrows-right.svg");
+      transform: translateY(-50%);
     }
   }
 }
