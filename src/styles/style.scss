@@ -313,6 +313,156 @@
         opacity: 0.25;
       }
     }
+
+    .slider-map {
+      margin: 0 auto;
+      min-height: 635px;
+      max-width: 1200px;
+      background-image: url("@images/world-map-dots.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .slick-list {
+        min-height: 635px;
+      }
+
+      .slick-current {
+        .slider-map-dots-content {
+          display: block;
+          padding: 28px 31px 0 32px;
+          width: 285px;
+        }
+      }
+
+      .slider-map-dots-content-row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+
+        .slider-map-dots-content-title {
+          position: relative;
+          margin-bottom: 8px;
+          padding-bottom: 8px;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 26px; /* 144.444% */
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+          }
+        }
+
+        .slider-map-dots-content-subtitle {
+          font-size: 16px;
+          line-height: 19px; /* 118.75% */
+          text-transform: capitalize;
+        }
+
+        .slider-map-dots-content-link {
+          padding-top: 4px;
+        }
+
+        .slider-map-dots-content-item {
+          text-align: center;
+
+          img {
+            margin-bottom: 7px;
+          }
+
+          .slider-map-dots-content-number {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 23px; /* 143.75% */
+          }
+
+          .slider-map-dots-content-name {
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px; /* 120% */
+          }
+        }
+      }
+
+      .slider-map-dots-circle {
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-color: $green;
+      }
+
+      .slider-map-dots-content {
+        display: none;
+        border-radius: 6px;
+        background: #0f1010;
+        opacity: 0.7;
+      }
+
+      .slider-map-dots {
+        position: relative;
+      }
+
+      .slider-map-dots-1 {
+        left: 0;
+        top: 335px;
+      }
+
+      .slider-map-dots-2 {
+        left: 0;
+        top: 270px;
+
+        .slider-map-dots-circle {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            right: -15px;
+            top: -25px;
+            width: 14px;
+            height: 17px;
+            background-image: url("@images/mini-marker.png");
+            background-size: cover;
+          }
+        }
+      }
+
+      .slider-map-dots-3 {
+        left: 25px;
+        top: 330px;
+      }
+
+      .slider-map-dots-4 {
+        left: -25px;
+        top: 470px;
+      }
+
+      .slider-map-dots-5 {
+        left: -65px;
+        top: 230px;
+      }
+
+      .slider-map-dots-6 {
+        left: -120px;
+        top: 550px;
+      }
+
+      .slider-map-dots-7 {
+        left: -95px;
+        top: 375px;
+      }
+
+      .slider-map-dots-8 {
+        left: 35px;
+        top: 470px;
+      }
+    }
   }
 }
 
