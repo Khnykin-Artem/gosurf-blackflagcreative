@@ -392,16 +392,32 @@
 
       .slider-map-dots-circle {
         border-radius: 50%;
-        width: 24px;
-        height: 24px;
+        width: 23px;
+        height: 23px;
         background-color: $green;
       }
 
       .slider-map-dots-content {
+        position: absolute;
+        bottom: 35px;
         display: none;
         border-radius: 6px;
-        background: #0f1010;
-        opacity: 0.7;
+        background: rgba(#0f1010, 0.7);
+        transform: translateX(-50%);
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -21px;
+          border-right: 12px solid transparent;
+          border-bottom: 20px solid $green;
+          border-left: 12px solid transparent;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          width: 0;
+          height: 0;
+        }
       }
 
       .slider-map-dots {
@@ -411,6 +427,14 @@
       .slider-map-dots-1 {
         left: 0;
         top: 335px;
+
+        .slider-map-dots-content {
+          transform: translateX(0);
+
+          &::before {
+            left: 0;
+          }
+        }
       }
 
       .slider-map-dots-2 {
@@ -461,9 +485,22 @@
       .slider-map-dots-8 {
         left: 35px;
         top: 470px;
+
+        .slider-map-dots-content {
+          transform: translateX(-262px);
+
+          &::before {
+            left: auto;
+            right: 0;
+          }
+        }
       }
     }
   }
+}
+
+.slider-map .slick-track {
+  transform: translate3d(0, 0, 0) !important;
 }
 
 .btn {
