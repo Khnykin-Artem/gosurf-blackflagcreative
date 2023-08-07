@@ -220,7 +220,6 @@
 
 .main {
   .surf {
-    padding: 160px 0 120px;
     background-image: url("@images/surf-bg.png");
     background-position: right 200px;
     background-size: auto;
@@ -535,5 +534,31 @@
       background-image: url("@images/arrows-right.svg");
       transform: translateY(-50%);
     }
+  }
+}
+
+.travel {
+  background-image: url("@images/travel-bg.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.travel-slider {
+  &-head {
+    min-height: 780px;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  &-description {
+    img {
+      padding-left: 25px;
+    }
+  }
+
+  &-subtitle {
+    padding-top: 132px;
+    padding-right: 80px;
+    text-align: right;
   }
 }
