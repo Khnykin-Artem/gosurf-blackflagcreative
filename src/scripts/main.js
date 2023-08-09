@@ -36,4 +36,13 @@ $(() => {
     asNavFor: '.surf-slider',
     focusOnSelect: true,
   });
+
+  $('.travel-slider').slick({
+    infinite: true,
+    fade: true,
+    prevArrow:
+      '<img class="slider-arrows slider-arrows-left" src="images/arrows-left.svg" alt="arrows-right">',
+    nextArrow:
+      '<img class="slider-arrows slider-arrows-right" src="images/arrows-right.svg" alt="arrows-right">',
+  });
 });
