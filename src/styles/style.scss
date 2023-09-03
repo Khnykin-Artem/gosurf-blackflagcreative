@@ -537,7 +537,7 @@
   }
 }
 
-.travel {
+.holder {
   background-image: url("@images/travel-bg.png");
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -548,7 +548,7 @@
   }
 }
 
-.travel-slider {
+.holder-slider {
   &-head {
     min-height: 780px;
     background-position: top left;
@@ -585,18 +585,18 @@
   }
 }
 
-.travel-slider-info {
+.holder-slider-info {
   display: flex;
   justify-content: space-around;
 }
 
-.travel-slider-info-item {
+.holder-slider-info-item {
   position: relative;
   margin-bottom: 66px;
   min-height: 200px;
 }
 
-.travel-slider-info-subtitle {
+.holder-slider-info-subtitle {
   position: absolute;
   left: -97px;
   top: 97px;
@@ -611,7 +611,7 @@
   transform: rotate(-90deg);
 }
 
-.travel-slider-info-title {
+.holder-slider-info-title {
   position: relative;
   padding-left: 40px;
   font-weight: 800;

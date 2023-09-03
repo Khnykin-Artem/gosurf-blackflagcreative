@@ -37,7 +37,7 @@ $(() => {
     focusOnSelect: true,
   });
 
-  $('.travel-slider').slick({
+  $('.holder-slider').slick({
     infinite: true,
     fade: true,
     prevArrow:
