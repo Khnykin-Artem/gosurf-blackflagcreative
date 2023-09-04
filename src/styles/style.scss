@@ -571,6 +571,14 @@
         right: 0;
         top: 0;
       }
+
+      .holder__stars {
+        display: inline-block;
+
+        img {
+          position: static;
+        }
+      }
     }
   }
 
