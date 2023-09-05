@@ -146,6 +146,69 @@ li {
 }
 
 .holder {
-  padding-bottom: 265px;
   margin-bottom: 35px;
+  padding-bottom: 265px;
+}
+
+.quantity {
+  position: relative;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.quantity input {
+  display: block;
+  float: left;
+  margin: 0;
+  border: 1px solid #eee;
+  padding: 0;
+  padding-left: 20px;
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  position: relative;
+  float: left;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  border-left: 1px solid #eee;
+  width: 20px;
+  font-family: "Trebuchet MS", "Helvetica", sans-serif !important;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+  transform: translateX(-100%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  height: 50%;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
 }
