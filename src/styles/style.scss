@@ -546,6 +546,10 @@
     top: 225px;
     opacity: 0.25;
   }
+
+  &.sleep {
+    background-image: url("@images/frangipani.png");
+  }
 }
 
 .holder-slider {
@@ -560,6 +564,7 @@
     padding: 160px 0 0 132px;
     min-height: 320px;
     background-position: right center;
+    background-size: contain;
     background-repeat: no-repeat;
 
     .description-head {

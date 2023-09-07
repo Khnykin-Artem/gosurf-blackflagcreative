@@ -78,4 +78,11 @@ $(() => {
       spinner.find('input').trigger('change');
     });
   });
+
+  $('.quantity-button').on('click', () => {
+    const sum =
+      $('.nights').val() * $('.sum').data('nights') +
+      ($('.guests').val() - 1) * $('.sum').data('guests');
+    $('.sum').html(`$${sum}`);
+  });
 });

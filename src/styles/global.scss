@@ -166,14 +166,14 @@ input[type="number"] {
 
 .quantity input {
   display: block;
-  float: left;
-  margin: 0;
-  border: 1px solid #eee;
-  padding: 0;
-  padding-left: 20px;
+  border: none;
   width: 45px;
   height: 42px;
-  line-height: 1.65;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px; /* 90% */
+  color: #fff;
+  background-color: transparent;
 }
 
 .quantity input:focus {
@@ -199,11 +199,11 @@ input[type="number"] {
 .quantity-button.quantity-up {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 45px;
 }
 
 .quantity-button.quantity-down {
   position: absolute;
   right: 25px;
-  top: 50px;
+  top: 45px;
 }
