@@ -569,8 +569,7 @@
 
     .description-head {
       position: relative;
-      display: flex;
-      column-gap: 9px;
+      padding-right: 68px;
 
       img {
         position: absolute;
@@ -578,10 +577,23 @@
         top: 0;
       }
 
-      .holder__stars {
+      .holder-star-list {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        li {
+          display: inline-block;
+          margin-left: -25px;
+        }
+
         img {
           position: static;
         }
+      }
+
+      &.description-head-sleep {
+        padding-right: 215px;
       }
     }
   }
