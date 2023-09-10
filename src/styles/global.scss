@@ -207,3 +207,10 @@ input[type="number"] {
   right: 25px;
   top: 45px;
 }
+
+.star-list {
+  li {
+    display: inline-block;
+    margin-left: -25px;
+  }
+}
