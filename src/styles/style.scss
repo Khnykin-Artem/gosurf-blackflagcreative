@@ -659,3 +659,35 @@
 .shop-slider {
   padding-left: 132px;
 }
+
+.shop-slider-inner {
+  display: flex;
+}
+
+.shop-slider-info {
+  margin-right: 40px;
+  padding-top: 150px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.description-head-shop {
+  margin-bottom: 47px;
+  max-width: 340px;
+}
+
+.shop-star-list {
+  margin-left: -9px;
+}
+
+.shop-slider-price {
+  margin-bottom: 64px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px; /* 125% */
+
+  sup {
+    padding-left: 5px;
+    font-size: 18px;
+  }
+}
