@@ -691,3 +691,46 @@
     font-size: 18px;
   }
 }
+
+.shop-slider-content {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 70px;
+}
+
+.shop-extras {
+  padding-left: 150px;
+}
+
+.shop-extras-inner {
+  display: flex;
+}
+
+.shop-extras-title {
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px; /* 142.857% */
+}
+
+.shop-extras-box {
+  margin-right: 57px;
+  text-align: center;
+
+  img {
+
+  }
+}
+
+.shop-extras-name {
+  font-size: 18px;
+  line-height: 22px; /* 122.222% */
+  letter-spacing: 8px;
+  opacity: 0.5;
+}
+
+.shop-extras-price {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 40px; /* 222.222% */
+}
