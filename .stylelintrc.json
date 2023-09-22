@@ -701,5 +701,6 @@
         "severity": "warning"
       }
     ]
-  }
+  },
+  "ignoreFiles": ["**/*.js"]
 }

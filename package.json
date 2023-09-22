@@ -53,10 +53,10 @@
     "gulp-zip": "^5.1.0",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
-    "stylelint": "^15.3.0",
+    "stylelint": "^15.10.3",
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
     "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^4.6.0",
+    "stylelint-scss": "^4.7.0",
     "webp-converter": "^2.2.3",
     "webpack": "^5.81.0",
     "webpack-stream": "^7.0.0"
