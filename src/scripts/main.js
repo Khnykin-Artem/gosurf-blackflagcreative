@@ -85,4 +85,8 @@ $(() => {
       ($('.guests').val() - 1) * $('.sum').data('guests');
     $('.sum').html(`$${sum}`);
   });
+
+  $('.surfboard-box-circle').on('click', function () {
+    $(this).toggleClass('active');
+  });
 });

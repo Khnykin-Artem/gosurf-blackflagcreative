@@ -719,10 +719,15 @@
 }
 
 .shop-extras-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
   min-height: 105px;
 }
 
 .shop-extras-name {
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 22px; /* 122.222% */
   letter-spacing: 8px;
@@ -733,4 +738,47 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 40px; /* 222.222% */
+}
+
+.surfboard {
+  position: relative;
+}
+
+.surfboard-box {
+  position: absolute;
+  right: 15px;
+  top: 215px;
+}
+
+.surfboard-box-circle {
+  position: relative;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  cursor: pointer;
+
+  &.active {
+    .row-circle {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+}
+
+.row-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 2px;
+  background-color: $green;
+  transform: translate(-50%, -50%);
+}
+
+.row-circle + .row-circle {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.surfboard-box-content {
+  position: absolute;
 }
